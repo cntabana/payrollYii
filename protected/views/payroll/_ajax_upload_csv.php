@@ -18,14 +18,14 @@
     ),
 ));
 ?>
-
+<fieldset>
 	<p class="note">
 		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-   <div class="control-group">		
+   		
 			<div class="span4">
 			
 							  <div class="row">
@@ -34,11 +34,7 @@
 					  <?php echo $form->error($model,'filename'); ?>
 				  </div>
 
-			  		
-
-
-			  
-                        </div>   
+	 
   </div>
 
   </div><!--end modal body-->
