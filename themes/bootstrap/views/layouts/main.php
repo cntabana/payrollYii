@@ -71,14 +71,8 @@
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label' => 'Settings', 'url'=>'#', 'visible'=>!Yii::app()->user->isGuest, 'itemOptions' =>array('class' => 'dropdown-submenu'),
-                            'items' => array(
-                            	'...',
-                         array('label'=>'Offering Types', 'url'=>array('/offeringtype'), 'visible'=>!Yii::app()->user->isGuest),    
-                                                     ),
-                       ),
-				
-                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'List of Member', 'url'=>array('/payroll')),
+		        array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),

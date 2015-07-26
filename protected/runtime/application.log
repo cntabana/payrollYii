@@ -6473,3 +6473,20 @@ in C:\xampp\htdocs\payrollyii\index.php (13)
 2015/07/26 19:19:34 [warning] [application] Failed to set unsafe attribute "workDateNew" of "Payroll".
 in C:\xampp\htdocs\payrollyii\protected\controllers\PayrollController.php (306)
 in C:\xampp\htdocs\payrollyii\index.php (13)
+2015/07/26 20:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "?r=payroll".' in C:\xampp\htdocs\payrollyii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\payrollyii\framework\web\CController.php(270): CController->missingAction('?r=payroll')
+#1 C:\xampp\htdocs\payrollyii\framework\web\CWebApplication.php(282): CController->run('?r=payroll')
+#2 C:\xampp\htdocs\payrollyii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/?r=payroll')
+#3 C:\xampp\htdocs\payrollyii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\payrollyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/payrollyii/index.php?r=site/?r=payroll
+HTTP_REFERER=http://127.0.0.1/payrollyii/index.php?r=site/index
+---
+2015/07/26 20:15:36 [warning] [application] Failed to set unsafe attribute "id" of "Payroll".
+in C:\xampp\htdocs\payrollyii\protected\controllers\PayrollController.php (231)
+in C:\xampp\htdocs\payrollyii\index.php (13)
+2015/07/26 20:15:40 [warning] [application] Failed to set unsafe attribute "id" of "Payroll".
+in C:\xampp\htdocs\payrollyii\protected\controllers\PayrollController.php (231)
+in C:\xampp\htdocs\payrollyii\index.php (13)
